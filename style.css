@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* Universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Css style */
+
+body {
+  background-image: linear-gradient(45deg, #0000009c, #000000b4),
+    url(./img/backgraund.avif);
+  color: #fff;
+  max-width: 1440px;
+  margin: auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav > ul > li {
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+nav > ul > li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(105, 105, 204, 0.493);
+}
+
+main {
+  margin-bottom: 4rem;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.header-container {
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 6.25rem;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: 900;
+  float: right;
+  margin-top: 1.5rem;
+}
+.header-first-text {
+  margin: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.header-second-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(105, 105, 204, 0.493);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+  color: #000;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images {
+  width: 300px;
+  margin: 1.25rem;
+}
+.images img {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  max-width: 100%;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  nav > ul > li {
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+  header img {
+    width: 4.25rem;
+  }
+  .header-title {
+    width: 270px;
+    font-size: 2rem;
+  }
+  .header-second-text {
+    width: 90%;
+  }
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(105, 105, 204, 0.493);
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    font-size: 0.76rem;
+  }
+  .gallery {
+    width: 100%;
+    margin: auto;
+  }
+}
